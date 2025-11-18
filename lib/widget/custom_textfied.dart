@@ -13,7 +13,6 @@ class CustomTextField extends StatelessWidget {
         filled: true,
         fillColor: Color.fromARGB(255, 244, 180, 217),
         prefixIcon: Icon(icon, color: Colors.black54),
-
         hintText: hint,
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(12),
