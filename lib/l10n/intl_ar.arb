@@ -1,0 +1,14 @@
+{
+    "WelcomeBack": "مرحبًا بعودتك",
+    "Enter_your_credentials_to_login": "أدخل بياناتك لتسجيل الدخول",
+    "Username": "اسم المستخدم",
+    "Password": "كلمة المرور",
+    "Login": "تسجيل الدخول",
+    "Forgot_password": "نسيت الرمز السري ",
+    "Don't_have_an_account ": "ليس لديك حساب؟",
+    "Sign_Up": "إنشاء حساب",
+    "Create_your_account": "أنشئ حسابك",
+    "Confirm_Password": "تأكيد كلمة المرور",
+    "Or": "أو",
+    "Already_have_an_account": "هل لديك حساب بالفعل؟"
+}

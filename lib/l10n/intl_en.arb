@@ -1,0 +1,14 @@
+{
+    "WelcomeBack": "Welcome Back",
+    "Enter_your_credentials_to_login": "Enter your credentials to login",
+    "Username": "Username",
+    "Password": "Password",
+    "Login": "Login",
+    "Forgot_password": "Forgopassword ",
+    "Don't_have_an_account ": "Don't have an account ",
+    "Sign_Up": "Sign Up",
+    "Create_your_account": "Create your account",
+    "Confirm_Password": "Confirm Password",
+    "Or": "Or",
+    "Already_have_an_account": "Already have an account"
+}
