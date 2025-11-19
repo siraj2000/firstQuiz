@@ -131,7 +131,15 @@ class S {
     return Intl.message('Or', name: 'Or', desc: '', args: []);
   }
 
-  // skipped getter for the 'Already_have_an_account?' key
+  /// `Already have an account`
+  String get Already_have_an_account {
+    return Intl.message(
+      'Already have an account',
+      name: 'Already_have_an_account',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

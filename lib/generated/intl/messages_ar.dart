@@ -22,6 +22,9 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+    "Already_have_an_account": MessageLookupByLibrary.simpleMessage(
+      "هل لديك حساب بالفعل؟",
+    ),
     "Confirm_Password": MessageLookupByLibrary.simpleMessage(
       "تأكيد كلمة المرور",
     ),
