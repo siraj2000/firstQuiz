@@ -86,6 +86,7 @@
 // }
 
 import 'package:flutter/material.dart';
+import 'package:login_test/core/text_theme.dart';
 import 'package:login_test/generated/l10n.dart';
 import 'package:login_test/views/login_page.dart';
 import 'package:login_test/widget/custom_button.dart';
@@ -118,17 +119,14 @@ class RegisterPage extends StatelessWidget {
 
                 Text(
                   S.of(context).Sign_Up,
-                  style: const TextStyle(
-                    fontSize: 32,
-                    fontWeight: FontWeight.bold,
-                  ),
+                  style: Theme.of(context).textTheme.headlineMedium,
                 ),
 
                 SizedBox(height: size.height / 30),
 
                 Text(
                   S.of(context).Create_your_account,
-                  style: const TextStyle(color: Colors.black54),
+                  style: (Theme.of(context).textTheme.bodyLarge),
                 ),
 
                 SizedBox(height: size.height / 30),
@@ -181,6 +179,8 @@ class RegisterPage extends StatelessWidget {
                       },
                       child: Text(
                         S.of(context).Enter_your_credentials_to_login,
+                        // style: Theme.of(context).textTheme.headlineMedium,
+                        style: AppTextTheme.darkTextTheme.bodyMedium,
                       ),
                     ),
                   ],
