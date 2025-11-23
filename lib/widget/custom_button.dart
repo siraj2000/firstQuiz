@@ -6,6 +6,8 @@ class CustomButton extends StatelessWidget {
 
   CustomButton({super.key, required this.text, required this.onTap});
 
+  bool isDark = false;
+
   @override
   Widget build(BuildContext context) {
     return InkWell(
@@ -20,7 +22,8 @@ class CustomButton extends StatelessWidget {
         child: Center(
           child: Text(
             text,
-            style: const TextStyle(color: Colors.white, fontSize: 16),
+            // style: const TextStyle(color: Colors.white, fontSize: 16),
+            style: Theme.of(context).textTheme.bodyLarge,
           ),
         ),
       ),

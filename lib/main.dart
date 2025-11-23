@@ -35,7 +35,7 @@ class _MyAppState extends State<MyApp> {
       builder: (context, child) {
         final provider = Provider.of<ThemeProvider>(context);
         return MaterialApp(
-          theme: provider.theme,
+          theme: provider.lightTheme,
           debugShowCheckedModeBanner: false,
           locale: _locale,
           supportedLocales: S.delegate.supportedLocales,

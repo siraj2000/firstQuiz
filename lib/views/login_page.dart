@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:login_test/core/text_theme.dart';
 import 'package:login_test/generated/l10n.dart';
 import 'package:login_test/main.dart';
 import 'package:login_test/provider/theme_provider.dart';
@@ -65,6 +66,7 @@ class LoginPage extends StatelessWidget {
                   Text(
                     S.of(context).WelcomeBack,
                     style: Theme.of(context).textTheme.headlineMedium,
+                    //style: AppTextTheme.lightTextTheme.headlineMedium,
                   ),
 
                   SizedBox(height: size.height * 0.05),
@@ -72,6 +74,7 @@ class LoginPage extends StatelessWidget {
                   Text(
                     S.of(context).Enter_your_credentials_to_login,
                     style: Theme.of(context).textTheme.bodyLarge,
+                    // style: AppTextTheme.lightTextTheme.bodyLarge,
                   ),
 
                   SizedBox(height: size.height / 40),
@@ -100,6 +103,7 @@ class LoginPage extends StatelessWidget {
                       //   fontWeight: FontWeight.w600,
                       // ),
                       style: Theme.of(context).textTheme.bodyLarge,
+                      // style: AppTextTheme.lightTextTheme.bodyMedium,
                     ),
                   ),
 
@@ -110,7 +114,6 @@ class LoginPage extends StatelessWidget {
                     children: [
                       Text(
                         S.of(context).Create_your_account,
-                        // style: Theme.of(context).textTheme.bodyMedium,
                         style: Theme.of(context).textTheme.bodyLarge,
                       ),
                       TextButton(
