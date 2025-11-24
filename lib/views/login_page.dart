@@ -1,15 +1,31 @@
 import 'package:flutter/material.dart';
-import 'package:login_test/core/text_theme.dart';
 import 'package:login_test/generated/l10n.dart';
 import 'package:login_test/main.dart';
 import 'package:login_test/provider/theme_provider.dart';
+import 'package:login_test/services/firebase_services.dart';
+import 'package:login_test/views/home_screen.dart';
 import 'package:login_test/views/register_page.dart';
 import 'package:login_test/widget/custom_button.dart';
 import 'package:login_test/widget/custom_textfied.dart';
 import 'package:provider/provider.dart';
 
-class LoginPage extends StatelessWidget {
+class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
+
+  @override
+  State<LoginPage> createState() => _LoginPageState();
+}
+
+class _LoginPageState extends State<LoginPage> {
+  TextEditingController emailController = TextEditingController();
+  TextEditingController passwordController = TextEditingController();
+
+  @override
+  void dispose() {
+    super.dispose();
+    emailController.dispose();
+    passwordController.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -80,6 +96,7 @@ class LoginPage extends StatelessWidget {
                   SizedBox(height: size.height / 40),
 
                   CustomTextField(
+                    controller: emailController,
                     hint: S.of(context).Username,
 
                     icon: Icons.person,
@@ -87,12 +104,32 @@ class LoginPage extends StatelessWidget {
                   SizedBox(height: size.height / 40),
 
                   CustomTextField(
+                    controller: passwordController,
                     hint: S.of(context).Password,
                     icon: Icons.lock,
                   ),
                   SizedBox(height: size.height / 40),
 
-                  CustomButton(text: S.of(context).Login, onTap: () {}),
+                  CustomButton(
+                    text: S.of(context).Login,
+                    onTap: () async {
+                      try {
+                        await FirebaseServices.signIn(
+                          emailController.text.trim(),
+                          passwordController.text.trim(),
+                        );
+
+                        print("tmmmmmmmmmm");
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => HomeScreen()),
+                        );
+                      } catch (e) {
+                        print(e);
+                      }
+                    },
+                  ),
+
                   SizedBox(height: size.height / 40),
 
                   Center(

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "916880720010",
+    "project_id": "fir-ayatask",
+    "storage_bucket": "fir-ayatask.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:916880720010:android:15bc4892bd52469885ed73",
+        "android_client_info": {
+          "package_name": "com.example.login_test"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_elPKyXC49UjwUdWdHsVNmozp7H4Gdi8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
